@@ -39,6 +39,7 @@
 |**Referer**|指示请求的来源页面URL，用于防盗链、溯源|`Referer: https://www.example.com/login`|
 |**Content-Type**|POST/PUT请求专用，声明请求体的数据类型（CTF传参核心）|`application/x-www-form-urlencoded`、`multipart/form-data`|
 |**Content-Length**|声明请求体的字节长度，服务器据此接收完整请求体|`Content-Length: 20`|
+|**X-Forwarded-For**|127.0.0.1，绕过本地ip|
 ## 三、CTF实操小提示
 
 1. **Method篡改**：部分题目通过修改请求方法（如GET改POST、POST改PUT）可绕过访问限制。
